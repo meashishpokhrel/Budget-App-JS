@@ -1,0 +1,15 @@
+TO DO LIST...
+1. Add event handler
+2. Get input values
+3. Add new item to data structure then to UI
+4. Calculate budget and update UI
+
+structure code into modules
+1. UI module------>2,3,4
+2. Data module------->3,4
+3. COntroller module--->1
+
+to create modules learn iifes and closures 
+IIFEE----> It;s main objective is to give data privacy. we make a fuction and enclose it into parenthesisi so it becomes expression. we invoke at last using() to call this fucntion. this fucntion variables and data are private and not accessible by global variable or global scope. It is used for data privacy.
+
+Closures---> AN inner function always has access to the parameters and variables of the outer funciton even though the outer function has returned.
