@@ -1,1 +1,1 @@
-echo # Budget-App-JS
+Simple Budget App PRoject 
