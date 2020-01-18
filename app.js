@@ -30,13 +30,28 @@
 
     //GLOABAL APP CONTROLLER
  var controller = (function(budgetctrl,UIctrl){
+
+    var  setupEventListeners = function(){
+        var DOM = UIctrl.getDOMstrings();
+
+        document.querySelector(DOM.inputBtn).addEventListener('click',ctrlAddItem);
+
+        document.addEventListener('keypress',function(event){
+            if (event.keycode === 13 || event.which === 13){
+                ctrlAddItem();
+            }
+            else{
+            //
+            }
+        });
+    };
     
-    var DOM = UIctrl.getDOMstrings();
+    
     var ctrlAddItem = function (){
 
         // Get input data
             var input = UIctrl.getInput();
-            console.log(input);
+            
         //Add the item to the budget controller
 
         //Add the new item to the UI
@@ -45,19 +60,19 @@
 
         //Display the budget on the UI
          
-    }
+    };
 
-
-    document.querySelector(DOM.inputBtn).addEventListener('click',ctrlAddItem);
-
-    document.addEventListener('keypress',function(event){
-        if (event.keycode === 13 || event.which === 13){
-            ctrlAddItem();
+    return{
+        init: function(){
+            console.log('stated application');
+            setupEventListeners();
         }
-        else{
-        //
-        }
-    });
+    };
+
+
+    
     
 
  })(BudgetController,UIController);
+
+ controller.init();

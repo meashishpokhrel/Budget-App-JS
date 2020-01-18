@@ -17,3 +17,6 @@ Closures---> AN inner function always has access to the parameters and variables
 To get input values from the HTML document
 ------>
     use var type=document.querySelector(.'class').value;
+
+we creteed init function because we watn to put code which needs to be executed when application starts.
+At beginning it was for keeping all us event listenres in one place.
