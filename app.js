@@ -1,31 +1,43 @@
+    //BUDGET CONTROLLER
  BudgetController = (function(){
 
-    var x=23;
-    var add = function(a){
-        return x+a;
-
-    }
-    return{
-        publicTest: function(b){
-            return (add(b))
-        }
-    }
-
+  
  })();
 
+    //UI CONTROLLER
  var UIController = (function(){
 
 
  })();
 
+    //GLOABAL APP CONTROLLER
  var controller = (function(budgetctrl,UIctrl){
-    var z=budgetctrl.publicTest(5);
+  
+    var ctrlAddItem = function (){
 
-    return {
-        anotherPublic: function(){
-            console.log(z);
-        }
+        // Get input data
+
+        //Add the item to the budget controller
+
+        //Add the new item to the UI
+
+        //Calculate the budget
+
+        //Display the budget on the UI
+        console.log('working');
     }
+
+
+    document.querySelector('.add__btn').addEventListener('click',ctrlAddItem);
+
+    document.addEventListener('keypress',function(event){
+        if (event.keycode === 13 || event.which === 13){
+            ctrlAddItem();
+        }
+        else{
+        //
+        }
+    });
     
 
  })(BudgetController,UIController);
