@@ -13,3 +13,7 @@ to create modules learn iifes and closures
 IIFEE----> It;s main objective is to give data privacy. we make a fuction and enclose it into parenthesisi so it becomes expression. we invoke at last using() to call this fucntion. this fucntion variables and data are private and not accessible by global variable or global scope. It is used for data privacy.
 
 Closures---> AN inner function always has access to the parameters and variables of the outer funciton even though the outer function has returned.
+
+To get input values from the HTML document
+------>
+    use var type=document.querySelector(.'class').value;
